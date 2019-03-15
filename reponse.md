@@ -1,8 +1,7 @@
 # Réponse de Romain Carrey
 
 ## Commande utilisée
-### J'ai aussi enlevé le '@' que j'ai remplacé par ' : ' pour la visibilité ... On peut remettre le '@' en enlevant le
-### dernier argument de la commande groupée. 
+#### J'ai aussi enlevé le '@' que j'ai remplacé par ' : ' pour la visibilité ... On peut remettre le '@' en enlevant le dernier argument de la commande groupée. 
 
 grep -r '"raw":' node_modules/**/package.json | cut -f3 -d ":" | sed '{s/"//g ; s/,// ; s/@/ : /}' 
 
